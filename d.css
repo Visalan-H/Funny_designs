@@ -76,5 +76,6 @@ button:active {
 h4{
     margin-left: 1400px;
     font-size: 32px;
-    margin-top: -480px;
+    margin-top: -200px;
+    position: absolute;
 }
