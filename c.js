@@ -1,15 +1,14 @@
-let ph=document.getElementById("num");
-function add5()
-{
+let ph = document.getElementById("num");
+function add5() {
     var hehe;
-    hehe=Number(ph.value);
-    hehe=hehe+5;
-    ph.value=hehe;
+    hehe = Number(ph.value);
+    hehe = hehe + 5;
+    ph.value = hehe;
 }
 function sub7() {
     var hehe;
     hehe = Number(ph.value);
-    hehe = hehe -7;
+    hehe = hehe - 7;
     ph.value = hehe;
 }
 function mul8() {
@@ -21,19 +20,31 @@ function mul8() {
 function div3() {
     var hehe;
     hehe = Number(ph.value);
-    hehe = hehe /3;
+    hehe = hehe / 3;
     ph.value = hehe;
 }
 
-function showAdvancedButtons() {
-    var advancedButtons = document.getElementById('advanced-buttons');
-    advancedButtons.style.display = 'block';
-}
+// function showAdvancedButtons() {
+
+// }
+
+document.getElementById('adv').addEventListener('click', function () {
+    var additionalButtons = document.getElementById('advanced-buttons');
+    var toggleButton = document.getElementById('adv');
+
+    if (additionalButtons.style.display === 'none' || additionalButtons.style.display === '') {
+        additionalButtons.style.display = 'block';
+        toggleButton.textContent = 'Close';
+    } else {
+        additionalButtons.style.display = 'none';
+        toggleButton.textContent = 'Advanced';
+    }
+});
 
 function sqr() {
     var hehe;
     hehe = Number(ph.value);
-    hehe = Math.pow(hehe,2);
+    hehe = Math.pow(hehe, 2);
     ph.value = hehe;
 }
 function sqrt() {
@@ -51,7 +62,7 @@ function sin() {
 function log10() {
     var hehe;
     hehe = Number(ph.value);
-    hehe = Math.log10(hehe);
+    hehe = parseFloat(Math.log10(hehe));
     ph.value = hehe;
 }
 function floor() {
