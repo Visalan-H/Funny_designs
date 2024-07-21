@@ -1,0 +1,67 @@
+body {
+    font-family: "Rajdhani";
+    font-weight: 550;
+    background-color:#2E236C;
+    color: #C8ACD6;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-left: 450px;
+    margin-top: 150px;
+    font-size: 3.14rem;
+}
+input{
+    margin-top: 50px;
+    margin-left: 528px;
+    padding: 14px 20px;
+    border: 1px solid #C8ACD6;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    width: 450px;
+    height: 70px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* .button-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+} */
+
+button {
+    height: 100px;
+    width: 170px;
+    cursor: pointer;
+    outline: 0;
+    border: 2px solid #C8ACD6;
+    border-radius: 5px;
+    background-color: #C8ACD6;
+    color: #2E236C;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    /* font-weight: 500; */
+    transform: scale(1);
+    transition: background-color 0.4s, color 0.4s, transform 0.4s, border 0.4s;
+}
+
+button:hover {
+    background: #2E236C;
+    color: #C8ACD6;
+    transform: scale(0.9);
+    border: 2px solid #C8ACD6;
+    transition: background-color 0.4s, color 0.4s, transform 0.4s, border 0.4s;
+}
+
+button:active {
+    transform: scale(0.8);
+    transition: transform 0.2s;
+}
